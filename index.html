@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>My Online Store</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<h1>Welcome to My Online Store!</h1>
-	<form>
-		<div>
-			<label for="item1">Item 1 ($6):</label>
-			<input type="number" id="item1" name="item1" min="0" value="0">
-		</div>
-		<div>
-			<label for="item2">Item 2 ($7):</label>
-			<input type="number" id="item2" name="item2" min="0" value="0">
-		</div>
-		<div>
-			<label for="item3">Item 3 ($8):</label>
-			<input type="number" id="item3" name="item3" min="0" value="0">
-		</div>
-		<button type="button" onclick="calculate()">Calculate Total</button>
-	</form>
-	<p>Total number of items: <span id="totalItems">0</span></p>
-	<p>Total cost: $<span id="totalCost">0</span></p>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Store</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Welcome to My Store</h1>
+    <form>
+      <label for="item1">關節粉 ($690):</label>
+      <input type="number" id="item1" name="item1" min="0"><br>
 
-	<script src="script.js"></script>
-</body>
+      <label for="item2">腸胃益生菌 ($620):</label>
+      <input type="number" id="item2" name="item2" min="0"><br>
+
+      <label for="item3">皮膚益生菌 ($650):</label>
+      <input type="number" id="item3" name="item3" min="0"><br>
+
+      <label for="item4">蔓越莓 ($590):</label>
+      <input type="number" id="item4" name="item4" min="0"><br>
+
+      <label for="item5">魚油 ($790):</label>
+      <input type="number" id="item5" name="item5" min="0"><br>
+
+      <button type="button" onclick="calculate()">Calculate</button>
+    </form>
+    
+    <div id="totalItems"></div>
+    <div id="totalPrice"></div>
+    
+    <script src="script.js"></script>
+  </body>
 </html>
