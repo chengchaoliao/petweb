@@ -15,7 +15,7 @@ function calculate() {
 
 
   const totalItems = item1+item2+item3+item4+item5+item6+item7+item8+item9+item10+item11+item12+item13;
-  const totalPrice = item1*690+item2*620+item3*650+item4*590+item5*790+item6*790+item7*720+item8*380+item9*750+item10*550+item11*450+item12*520+item13*690
+  const totalPrice = item1*690+item2*620+item3*650+item4*590+item5*790+item6*790+item7*720+item8*380+item9*750+item10*550+item11*450+item12*520+item13*690;
 
   let discount = 0;
   if (totalItems >= 10) {
