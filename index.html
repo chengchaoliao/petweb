@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Shopping Cart</h1>
+    <table>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Quantity</th>
+      </tr>
+      <tr>
+        <td>Item 1</td>
+        <td>$1</td>
+        <td><button onclick="incrementItem(1)">+</button><span id="item1-qty">0</span><button onclick="decrementItem(1)">-</button></td>
+      </tr>
+      <tr>
+        <td>Item 2</td>
+        <td>$2</td>
+        <td><button onclick="incrementItem(2)">+</button><span id="item2-qty">0</span><button onclick="decrementItem(2)">-</button></td>
+      </tr>
+      <tr>
+        <td>Item 3</td>
+        <td>$3</td>
+        <td><button onclick="incrementItem(3)">+</button><span id="item3-qty">0</span><button onclick="decrementItem(3)">-</button></td>
+      </tr>
+      <tr>
+        <td>Item 4</td>
+        <td>$4</td>
+        <td><button onclick="incrementItem(4)">+</button><span id="item4-qty">0</span><button onclick="decrementItem(4)">-</button></td>
+      </tr>
+      <tr>
+        <td>Item 5</td>
+        <td>$5</td>
+        <td><button onclick="incrementItem(5)">+</button><span id="item5-qty">0</span><button onclick="decrementItem(5)">-</button></td>
+      </tr>
+    </table>
+    <div id="total"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
