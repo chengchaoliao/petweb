@@ -1,27 +1,26 @@
-var item1Qty = 0;
-var item2Qty = 0;
-var item3Qty = 0;
-var item4Qty = 0;
-var item5Qty = 0;
-var totalItems = 0;
-var totalCost = 0;
+function calculate() {
+  const item1 = parseInt(document.getElementById('item1').value);
+  const item2 = parseInt(document.getElementById('item2').value);
+  const item3 = parseInt(document.getElementById('item3').value);
+  const item4 = parseInt(document.getElementById('item4').value);
+  const item5 = parseInt(document.getElementById('item5').value);
 
-function incrementItem(itemId) {
-  switch (itemId) {
-    case 1:
-      item1Qty++;
-      totalItems++;
-      totalCost += 1;
-      document.getElementById("item1-qty").innerHTML = item1Qty;
-      break;
-    case 2:
-      item2Qty++;
-      totalItems++;
-      totalCost += 2;
-      document.getElementById("item2-qty").innerHTML = item2Qty;
-      break;
-    case 3:
-      item3Qty++;
-      totalItems++;
-      totalCost += 3;
-      document.getElementById("item3
+  const totalItems = item1 + item2 + item3 + item4 + item5;
+  const totalPrice = item1*1 + item2*2 + item3*3 + item4*4 + item5*5;
+
+  let discount = 0;
+  if (totalItems >= 10) {
+    discount = 0.3;
+  } else if (totalItems >= 5) {
+    discount = 0.2;
+  } else if (totalItems >= 2) {
+    discount = 0.15;
+  } else if (totalItems >= 1) {
+    discount = 0.1;
+  }
+
+  const discountedPrice = totalPrice * (1 - discount);
+
+  document.getElementById('totalItems').textContent = `Total Items: ${totalItems}`;
+  document.getElementById('totalPrice').textContent = `Total Price: $${discountedPrice.toFixed(2)}`;
+}
