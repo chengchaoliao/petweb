@@ -1,17 +1,17 @@
 function calculate() {
-  const item1 = parseInt(document.getElementById('item1').value);
-  const item2 = parseInt(document.getElementById('item2').value);
-  const item3 = parseInt(document.getElementById('item3').value);
-  const item4 = parseInt(document.getElementById('item4').value);
-  const item5 = parseInt(document.getElementById('item5').value);
-  const item6 = parseInt(document.getElementById('item6').value);
-  const item7 = parseInt(document.getElementById('item7').value);
-  const item8 = parseInt(document.getElementById('item8').value);
-  const item9 = parseInt(document.getElementById('item9').value);
-  const item10 = parseInt(document.getElementById('item10').value);
-  const item11 = parseInt(document.getElementById('item11').value);
-  const item12 = parseInt(document.getElementById('item12').value);
-  const item13 = parseInt(document.getElementById('item13').value);
+  const item1 = Number(document.getElementById('item1').value);
+  const item2 = Number(document.getElementById('item2').value);
+  const item3 = Number(document.getElementById('item3').value);
+  const item4 = Number(document.getElementById('item4').value);
+  const item5 = Number(document.getElementById('item5').value);
+  const item6 = Number(document.getElementById('item6').value);
+  const item7 = Number(document.getElementById('item7').value);
+  const item8 = Number(document.getElementById('item8').value);
+  const item9 = Number(document.getElementById('item9').value);
+  const item10 = Number(document.getElementById('item10').value);
+  const item11 = Number(document.getElementById('item11').value);
+  const item12 = Number(document.getElementById('item12').value);
+  const item13 = Number(document.getElementById('item13').value);
 
 
   const totalItems = item1+item2+item3+item4+item5+item6+item7+item8+item9+item10+item11+item12+item13;
